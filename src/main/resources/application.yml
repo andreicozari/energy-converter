@@ -1,0 +1,8 @@
+# APP INFO
+info:
+  app:
+    description: Energy converter
+    name: Energy converter
+
+server:
+  port: 8701
