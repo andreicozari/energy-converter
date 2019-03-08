@@ -45,11 +45,12 @@ public class ConverterServiceTest {
     @Test
     public void whenSeasonConverterIsCalled_thenResultIsCorrect() {
         String seasonInputToTest = "SWS-2018-04";
-        String expectedResult = "Sum-18";
+        String expectedResult = "Spr-18";
         Mockito.when(converterService.convertSeason(seasonInputToTest)).thenReturn(expectedResult);
         String resultQuarter = converterService.convertSeason(seasonInputToTest);
         assertEquals(expectedResult, resultQuarter);
     }
+
 
     @Test
     public void whenMonthConverterIsCalled_thenResultIsCorrect() {
@@ -59,5 +60,4 @@ public class ConverterServiceTest {
         String resultQuarter = converterService.convertMonth(monthInputToTest);
         assertEquals(expectedResult, resultQuarter);
     }
-
 }
