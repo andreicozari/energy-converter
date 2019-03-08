@@ -10,7 +10,14 @@ public class ConverterService {
     }
 
     public String convertQuarter(String quarter) {
-        return quarter;
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder
+                .append(quarter.charAt(0))
+                .append(quarter.charAt(7))
+                .append("-")
+                .append(quarter.charAt(4))
+                .append(quarter.charAt(5));
+        return stringBuilder.toString();
     }
 
     public String convertSeason(String season) {
