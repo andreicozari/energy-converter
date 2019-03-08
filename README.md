@@ -1,5 +1,5 @@
 
-# Access the Energy Converter application at:
+# Access the Energy Converter application the following REST endpoints:
 
     http://localhost:8701/convert/year/2019
     
