@@ -38,7 +38,7 @@ public class ConverterServiceTest {
         String expectedResult = "Q2-18";
         Mockito.when(converterService.convertQuarter(quarterInputToTest)).thenReturn(expectedResult);
         String resultQuarter = converterService.convertQuarter(quarterInputToTest);
-        assertEquals(quarterInputToTest, resultQuarter);
+        assertEquals(expectedResult, resultQuarter);
     }
 
 
@@ -48,7 +48,7 @@ public class ConverterServiceTest {
         String expectedResult = "Sum-18";
         Mockito.when(converterService.convertSeason(seasonInputToTest)).thenReturn(expectedResult);
         String resultQuarter = converterService.convertSeason(seasonInputToTest);
-        assertEquals(seasonInputToTest, resultQuarter);
+        assertEquals(expectedResult, resultQuarter);
     }
 
     @Test
@@ -57,7 +57,7 @@ public class ConverterServiceTest {
         String expectedResult = "Feb-2018";
         Mockito.when(converterService.convertMonth(monthInputToTest)).thenReturn(expectedResult);
         String resultQuarter = converterService.convertMonth(monthInputToTest);
-        assertEquals(monthInputToTest, resultQuarter);
+        assertEquals(expectedResult, resultQuarter);
     }
 
 }
