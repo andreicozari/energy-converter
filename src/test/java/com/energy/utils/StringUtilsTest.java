@@ -3,11 +3,10 @@ package com.energy.utils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import static org.assertj.core.api.Assertions.*;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.Assert.assertEquals;
 
 @RunWith(JUnit4.class)
 public class StringUtilsTest {
@@ -19,7 +18,7 @@ public class StringUtilsTest {
 
         seasonsInputToTest.forEach((seasonInputToTest) -> {
             String resultQuarter = StringUtils.calculateShortSeason(seasonInputToTest);
-            assertEquals(expectedResult, resultQuarter);
+            assertThat(expectedResult).isEqualTo(resultQuarter);
         });
     }
 }
