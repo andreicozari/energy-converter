@@ -1,28 +1,21 @@
 package com.energy.service;
 
-import com.energy.EnergyConverterApplication;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
-import static org.mockito.MockitoAnnotations.initMocks;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = EnergyConverterApplication.class)
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class ConverterServiceTest {
 
     @Autowired
     private ConverterService converterService;
-
-    @Before
-    public void setUp() {
-        initMocks(this);
-    }
 
     @Test
     public void testConvertYear() {
